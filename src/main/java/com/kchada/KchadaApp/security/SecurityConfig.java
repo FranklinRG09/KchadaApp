@@ -104,7 +104,9 @@ public class SecurityConfig {
                                 "/api/posts",
                                 "/api/posts/**",
                                 "/api/departments",
-                                "/api/departments/**"
+                                "/api/departments/**",
+                                "/api/profiles/*",
+                                "/api/profiles/*/posts"
                         ).permitAll()
 
                         .anyRequest().authenticated()
